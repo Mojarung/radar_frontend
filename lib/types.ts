@@ -18,6 +18,7 @@ export interface AnalysisResult {
   sources: NewsSource[];
   timeline: TimelineEvent[];
   draft: string;
+  telegram_post: string;
 }
 
 export interface AnalysisResponse {

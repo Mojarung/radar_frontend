@@ -100,7 +100,7 @@ uvicorn src.api.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 POST /api/v1/analyze
 {
-  "time_window_hours": 24,
+  "time_window_hours": 720,
   "top_k": 10
 }
 ```

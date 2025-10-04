@@ -19,7 +19,7 @@ export default function Home() {
   const [data, setData] = useState<AnalysisResponse | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [timeWindow, setTimeWindow] = useState<number>(24);
+  const [timeWindow, setTimeWindow] = useState<number>(720);
   const [topK, setTopK] = useState<number>(10);
 
   const fetchNews = async () => {

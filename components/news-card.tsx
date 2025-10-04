@@ -20,17 +20,23 @@ interface NewsCardProps {
 export function NewsCard({ news }: NewsCardProps) {
   const [open, setOpen] = useState(false);
 
+  const getAdjustedHotness = (hotness: number) => {
+    return Math.min(hotness + 0.2, 1.0);
+  };
+
   const getHotnessColor = (hotness: number) => {
-    if (hotness >= 0.8) return "bg-red-500 glow-pink";
-    if (hotness >= 0.6) return "bg-orange-500";
-    if (hotness >= 0.4) return "bg-yellow-500";
+    const adjustedHotness = getAdjustedHotness(hotness);
+    if (adjustedHotness >= 0.8) return "bg-red-500 glow-pink";
+    if (adjustedHotness >= 0.6) return "bg-orange-500";
+    if (adjustedHotness >= 0.4) return "bg-yellow-500";
     return "bg-blue-500";
   };
 
   const getHotnessLabel = (hotness: number) => {
-    if (hotness >= 0.8) return "🔥 ОЧЕНЬ ГОРЯЧО";
-    if (hotness >= 0.6) return "⚡ ГОРЯЧО";
-    if (hotness >= 0.4) return "📊 ТЕПЛО";
+    const adjustedHotness = getAdjustedHotness(hotness);
+    if (adjustedHotness >= 0.8) return "🔥 ОЧЕНЬ ГОРЯЧО";
+    if (adjustedHotness >= 0.6) return "⚡ ГОРЯЧО";
+    if (adjustedHotness >= 0.4) return "📊 ТЕПЛО";
     return "📰 АКТУАЛЬНО";
   };
 
@@ -64,7 +70,7 @@ export function NewsCard({ news }: NewsCardProps) {
           <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
             <div className="flex items-center gap-1">
               <TrendingUp className="w-4 h-4" />
-              <span>Горячесть: {(news.hotness * 100).toFixed(0)}%</span>
+              <span>Горячесть: {(getAdjustedHotness(news.hotness) * 100).toFixed(0)}%</span>
             </div>
             <div className="flex items-center gap-1">
               <Clock className="w-4 h-4" />
@@ -90,7 +96,7 @@ export function NewsCard({ news }: NewsCardProps) {
             <div className="flex items-start justify-between gap-4">
               <DialogTitle className="text-2xl text-gray-900 font-bold">{news.headline}</DialogTitle>
               <Badge className={`${getHotnessColor(news.hotness)} text-lg px-4 py-1`}>
-                {(news.hotness * 100).toFixed(0)}%
+                {(getAdjustedHotness(news.hotness) * 100).toFixed(0)}%
               </Badge>
             </div>
             <DialogDescription className="text-base pt-2 text-gray-700">{news.why_now}</DialogDescription>

@@ -73,7 +73,7 @@ export function NewsCard({ news }: NewsCardProps) {
             </div>
           </div>
 
-          <Button variant="secondary" className="w-full mt-4 bg-primary/20 hover:bg-primary/30 border border-primary/50" onClick={(e) => { e.stopPropagation(); setOpen(true); }}>
+          <Button className="w-full mt-4 bg-gradient-to-r from-primary/90 to-secondary/90 hover:from-primary hover:to-secondary text-white font-semibold border-0" onClick={(e) => { e.stopPropagation(); setOpen(true); }}>
             Подробнее
           </Button>
         </CardContent>

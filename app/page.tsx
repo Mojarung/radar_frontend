@@ -58,7 +58,7 @@ export default function Home() {
 
       {/* Main Content */}
       <div className="flex-1 container mx-auto px-4 py-6">
-        <div className="bg-card/80 backdrop-blur-sm rounded-lg p-6 border border-primary/30 mb-6">
+        <div className="bg-card/95 backdrop-blur-xl rounded-lg p-6 border border-primary/40 mb-6 shadow-lg">
           <div className="flex flex-wrap gap-4 items-end">
             <div className="flex-1 min-w-[200px]">
               <label className="block text-sm font-medium mb-2 text-foreground">

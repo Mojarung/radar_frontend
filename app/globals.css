@@ -47,9 +47,9 @@
   --radius: 0.5rem;
   --background: 0 0% 6%;
   --foreground: 0 0% 98%;
-  --card: 280 20% 15%;
+  --card: 280 20% 22%;
   --card-foreground: 0 0% 98%;
-  --popover: 280 20% 15%;
+  --popover: 280 20% 22%;
   --popover-foreground: 0 0% 98%;
   --primary: 320 100% 65%;
   --primary-foreground: 0 0% 100%;
@@ -73,9 +73,9 @@
 .dark {
   --background: 0 0% 6%;
   --foreground: 0 0% 98%;
-  --card: 280 20% 15%;
+  --card: 280 20% 22%;
   --card-foreground: 0 0% 98%;
-  --popover: 280 20% 15%;
+  --popover: 280 20% 22%;
   --popover-foreground: 0 0% 98%;
   --primary: 320 100% 65%;
   --primary-foreground: 0 0% 100%;

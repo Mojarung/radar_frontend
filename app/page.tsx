@@ -79,7 +79,6 @@ export default function Home() {
                   <SelectItem value="24">Последние 24 часа</SelectItem>
                   <SelectItem value="48">Последние 2 дня</SelectItem>
                   <SelectItem value="72">Последние 3 дня</SelectItem>
-                  <SelectItem value="168">Последняя неделя</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -99,9 +98,6 @@ export default function Home() {
                   <SelectItem value="5">Топ 5</SelectItem>
                   <SelectItem value="10">Топ 10</SelectItem>
                   <SelectItem value="15">Топ 15</SelectItem>
-                  <SelectItem value="20">Топ 20</SelectItem>
-                  <SelectItem value="30">Топ 30</SelectItem>
-                  <SelectItem value="50">Топ 50</SelectItem>
                 </SelectContent>
               </Select>
             </div>

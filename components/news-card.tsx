@@ -100,7 +100,7 @@ export function NewsCard({ news }: NewsCardProps) {
             {/* Draft */}
             <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
               <h3 className="font-bold text-lg mb-2 text-purple-600">📝 Черновик поста</h3>
-              <div className="whitespace-pre-wrap text-sm text-gray-800">{news.draft}</div>
+              <div className="whitespace-pre-wrap text-sm text-gray-800">{news.telegram_post}</div>
             </div>
 
             {/* Entities */}

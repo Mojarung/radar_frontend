@@ -43,7 +43,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background cyber-grid">
+    <div className="min-h-screen bg-background cyber-grid flex flex-col">
       {/* Header */}
       <header className="border-b border-primary/30 bg-card/50 backdrop-blur-sm sticky top-0 z-10">
         <div className="container mx-auto px-4 py-6">
@@ -56,8 +56,8 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Filters */}
-      <div className="container mx-auto px-4 py-6">
+      {/* Main Content */}
+      <div className="flex-1 container mx-auto px-4 py-6">
         <div className="bg-card/80 backdrop-blur-sm rounded-lg p-6 border border-primary/30 mb-6">
           <div className="flex flex-wrap gap-4 items-end">
             <div className="flex-1 min-w-[200px]">
@@ -180,7 +180,7 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <footer className="border-t border-primary/30 bg-card/50 backdrop-blur-sm mt-12">
+      <footer className="border-t border-primary/30 bg-card/80 backdrop-blur-sm mt-auto">
         <div className="container mx-auto px-4 py-6 text-center text-muted-foreground text-sm">
           <p>MOJARUNG RADAR © 2025 | Система анализа финансовых новостей</p>
         </div>

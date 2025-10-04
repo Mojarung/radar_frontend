@@ -45,50 +45,50 @@
 
 :root {
   --radius: 0.5rem;
-  --background: 0 0% 8%;
+  --background: 0 0% 6%;
   --foreground: 0 0% 98%;
-  --card: 0 0% 12%;
+  --card: 280 20% 15%;
   --card-foreground: 0 0% 98%;
-  --popover: 0 0% 12%;
+  --popover: 280 20% 15%;
   --popover-foreground: 0 0% 98%;
-  --primary: 326 100% 60%;
+  --primary: 320 100% 65%;
   --primary-foreground: 0 0% 100%;
-  --secondary: 277 70% 50%;
-  --secondary-foreground: 0 0% 98%;
-  --muted: 0 0% 20%;
-  --muted-foreground: 0 0% 60%;
-  --accent: 326 100% 60%;
+  --secondary: 280 80% 60%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 0 0% 25%;
+  --muted-foreground: 0 0% 65%;
+  --accent: 320 100% 65%;
   --accent-foreground: 0 0% 100%;
   --destructive: 0 84% 60%;
-  --border: 326 30% 30%;
-  --input: 326 20% 25%;
-  --ring: 326 100% 60%;
-  --chart-1: 326 100% 60%;
-  --chart-2: 277 70% 50%;
-  --chart-3: 220 70% 50%;
-  --chart-4: 173 70% 50%;
-  --chart-5: 45 70% 50%;
+  --border: 320 40% 35%;
+  --input: 280 30% 20%;
+  --ring: 320 100% 65%;
+  --chart-1: 320 100% 65%;
+  --chart-2: 280 80% 60%;
+  --chart-3: 200 80% 60%;
+  --chart-4: 160 80% 60%;
+  --chart-5: 45 90% 60%;
 }
 
 .dark {
-  --background: 0 0% 8%;
+  --background: 0 0% 6%;
   --foreground: 0 0% 98%;
-  --card: 0 0% 12%;
+  --card: 280 20% 15%;
   --card-foreground: 0 0% 98%;
-  --popover: 0 0% 12%;
+  --popover: 280 20% 15%;
   --popover-foreground: 0 0% 98%;
-  --primary: 326 100% 60%;
+  --primary: 320 100% 65%;
   --primary-foreground: 0 0% 100%;
-  --secondary: 277 70% 50%;
-  --secondary-foreground: 0 0% 98%;
-  --muted: 0 0% 20%;
-  --muted-foreground: 0 0% 60%;
-  --accent: 326 100% 60%;
+  --secondary: 280 80% 60%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 0 0% 25%;
+  --muted-foreground: 0 0% 65%;
+  --accent: 320 100% 65%;
   --accent-foreground: 0 0% 100%;
   --destructive: 0 84% 60%;
-  --border: 326 30% 30%;
-  --input: 326 20% 25%;
-  --ring: 326 100% 60%;
+  --border: 320 40% 35%;
+  --input: 280 30% 20%;
+  --ring: 320 100% 65%;
 }
 
 @layer base {
